@@ -10,4 +10,7 @@ const shortDays = ["mon"];
 
 const [Mon, Tue = "tue"] = shortDays;
 
+const daysMaker = () => days;
+// if function returns array, destructuring is possible
+
 console.log(tue);
