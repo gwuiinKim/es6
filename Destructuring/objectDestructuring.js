@@ -5,7 +5,8 @@ const settings = {
     unfollow: false
   },
   color: {
-    theme: "dark"
+    theme: "dark",
+    chosen_color: "blue"
   }
 };
 
@@ -22,3 +23,10 @@ const {
 } = settings;
 
 // default value when destructuring object.
+
+let chosenColor = "green"(
+  // desturcture and assign to let variable is possible
+  ({
+    color: { chosen_color: chosenColor }
+  } = settings)
+);
