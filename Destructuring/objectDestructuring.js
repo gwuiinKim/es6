@@ -51,3 +51,5 @@ saveSettings({
   mkt: true,
   color: "green"
 });
+
+//  if key and value of object is equal, then just write once is enough.
