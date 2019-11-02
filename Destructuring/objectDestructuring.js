@@ -24,9 +24,25 @@ const {
 
 // default value when destructuring object.
 
-let chosenColor = "green"(
+let chosenColor = "green"
+
+
   // desturcture and assign to let variable is possible
   ({
     color: { chosen_color: chosenColor }
-  } = settings)
-);
+  }) = settings
+
+
+// const saveSettings = (followAlert, unFollowAlert, marketingAlert, themeColor) =>
+// argument without key,value is not good.
+
+const saveSettings = settings => {
+  console.log(settings);
+};
+
+saveSettings({
+  follow: true,
+  alert: true,
+  mkt: true,
+  color: "green"
+});
