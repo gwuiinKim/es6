@@ -27,3 +27,19 @@ const addWelcome = () => {
 };
 
 addWelcome();
+
+const friends = ["woosung", "kyusup"];
+
+// before es6
+// create ul, append ul to wrapper.
+// crate li, innerText.....
+
+//es6
+const list = `
+<h1>Friends </h1>
+<ul>
+  ${friends.map(friend => `<li>${friend}</li>`).join("")}
+</ul>
+`;
+// es6 is amazing.
+wrapper.innerHTML = list;
